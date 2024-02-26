@@ -25,14 +25,14 @@ body {
 ul {
     line-height: 150%;
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 ol {
     line-height: 160%;
     margin-top: 10px;
     margin-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 25px;
  
 }
 
@@ -42,21 +42,22 @@ ol > li::marker, ul > li::marker {
 }
 
 ul > li {
-    padding: 5px 25px;
+    padding: 5px 20px;
 }
 
 ol > li {
     margin: 10px 0;
-    padding-left: 25px;
+    padding: 0 20px;
 }
 
-.black-list-markers li::marker {
-    color: black;
+.purple-list-markers li::marker {
+    color: hsl(332, 51%, 32%);
     font-weight: 400;
 }
 
 hr {
     margin-bottom: 30px;
+    border-color: hsl(30, 18%, 87%);
 }
 
 .outer-box {
@@ -82,9 +83,6 @@ hr {
     overflow:hidden;
 }
 
-.text-area {
-
-}
 .main-heading {
     font-size: 35px;
     font-weight: 500;
@@ -129,6 +127,10 @@ hr {
     padding: 12px 0;
     padding-left: 25px;
     border-bottom: 1px solid grey;
+}
+
+#remove-border {
+    border-bottom: none;
 }
 
 .text-brown-strong {

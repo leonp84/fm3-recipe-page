@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 body {
-    /* min-height: 96vh; */
-    min-height: 3000px;
+    min-height: 96vh;
     margin: 0;
 
     background-color: hsl(30, 54%, 90%);
@@ -16,19 +15,20 @@ body {
     text-align: left;
     line-height: 150%;
 
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 ul {
-    line-height: 190%;
+    line-height: 150%;
     margin-top: 10px;
     padding-left: 20px;
 }
 
 ol {
-    line-height: 140%;
+    line-height: 160%;
     margin-top: 10px;
     margin-bottom: 30px;
     padding-left: 20px;
@@ -41,7 +41,7 @@ ol > li::marker, ul > li::marker {
 }
 
 ul > li {
-    padding-left: 25px;
+    padding: 5px 25px;
 }
 
 ol > li {
@@ -60,19 +60,27 @@ hr {
 
 .outer-box {
     background-color: white;
-    min-height: 2000px;
+    max-width: 700px;
+    border-radius: 20px;
 }
+
+.text-area {
+    padding: 0 30px;
+}
+
 .header-image {
     display: flex;
     justify-content: center;
 }
 
 .header-image img {
-    width: 390px;
+    width: 100%;
+    min-width: 400px;
+    overflow:hidden;
 }
 
 .text-area {
-    padding: 0 30px;
+
 }
 .main-heading {
     font-size: 35px;
@@ -92,18 +100,20 @@ hr {
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
     padding: 20px 24px;
+    padding-bottom: 5px;
     margin: 30px 0;
-    height: 150px;
+
 }
 
 .raspberry-heading {
     color: hsl(332, 51%, 32%);
+    font-size: 20px;
     margin: 0;
 }
 
 .secondary-heading {
     color: hsl(14, 45%, 36%);
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -123,16 +133,9 @@ hr {
     font-weight: bold;
 }
 
-
-
-
-
-
-
 .attribution { 
     font-size: 11px; 
-    bottom: 0.5em; 
-    width:100%;
+    align-self: flex-start;
 }
 
 .attribution a, .attribution a:visited { 
@@ -141,4 +144,26 @@ hr {
 
 .attribution a:hover {
     color: hsl(14, 45%, 36%);
+}
+
+
+@media screen and (min-width: 768px){
+    .outer-box { 
+        margin: 20px;
+    }
+
+    .header-image {
+        padding-top: 30px;
+    }
+    
+    .header-image img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .outer-box {
+        padding-bottom: 30px;
+        margin-bottom: 80px;
+    }
+
 }
